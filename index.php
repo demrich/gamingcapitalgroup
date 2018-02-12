@@ -6,7 +6,7 @@
                 THE LOGO
             </div>
             <p class="lead">
-                <a href="#">&hearts;</a>
+                <a href="#">&hearts;!</a>
             </p>
         </div>
     </div>
