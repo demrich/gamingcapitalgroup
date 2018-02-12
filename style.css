@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Mixins */
+/* line 19, sass/_config.scss */
+body {
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 16px;
+}
+
+/* line 24, sass/_config.scss */
+a {
+  -webkit-transform: 0.4s ease-in-out;
+  -moz-transform: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+/* line 28, sass/_config.scss */
+a:hover {
+  color: white;
+  text-decoration: none;
+  -webkit-transform: 0.4s ease-in-out;
+  -moz-transform: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/* line 35, sass/_config.scss */
+.container-fluid {
+  padding: 24px;
+}
+
+/* line 5, sass/style.scss */
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: black;
+  color: white;
+  height: 90px;
+}
+/* line 13, sass/style.scss */
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  padding: 20px;
+  font-size: 25px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 22, sass/style.scss */
+header nav,
+header nav ul,
+header nav ul li {
+  margin: 0;
+  padding: 0;
+}
+/* line 29, sass/style.scss */
+header nav {
+  position: absolute;
+  top: 40%;
+  right: 25px;
+  -webkit-transform: -50%;
+  -moz-transform: -50%;
+  transition: -50%;
+}
+/* line 34, sass/style.scss */
+header nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 39, sass/style.scss */
+header nav ul li.last {
+  margin: 0;
+}
+/* line 44, sass/style.scss */
+header nav ul li a {
+  font-size: 19px;
+  line-height: normal;
+  color: white;
+}
+
+/* line 53, sass/style.scss */
+li {
+  padding-bottom: 20px;
+}
+
+/* line 58, sass/style.scss */
+#homepage header {
+  background-color: transparent;
+}
+/* line 61, sass/style.scss */
+#homepage .jumbotron {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100vh;
+}
+/* line 66, sass/style.scss */
+#homepage .jumbotron .lead {
+  position: absolute;
+  top: 70vh;
+  left: 50%;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(0, 123, 255, 0.65);
+  margin-left: -60px;
+  text-align: center;
+  font-size: 50px;
+}
+/* line 79, sass/style.scss */
+#homepage .jumbotron .lead a {
+  line-height: 120px;
+  color: #fff;
+}
+
+/* line 89, sass/style.scss */
+.logo-container {
+  text-align: center;
+}
