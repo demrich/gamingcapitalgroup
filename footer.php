@@ -1,5 +1,6 @@
 <?php wp_footer(); ?>
 <footer>
+<div class="container">
 <nav class="footer-nav">
 <?php 
         $args= array (
@@ -9,6 +10,8 @@
 <?php wp_nav_menu( $args ); ?>
 
 </nav>
+    </div>
 </footer>
+</div>
 </body>
 </html>

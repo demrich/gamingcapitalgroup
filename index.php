@@ -1,6 +1,5 @@
 <?php get_header() ?>
 
-<div id="homepage">
 <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="logo-container">

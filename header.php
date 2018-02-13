@@ -16,7 +16,11 @@
     <?php wp_head(); ?>
 </head>
 <body  <?php body_class(); ?>>
-   
+
+<div id="wrapper">
+<?php if (is_home()) { ?>
+    <div id="homepage">
+<?php } ?>
     <header> 
 
     <div class="logo">

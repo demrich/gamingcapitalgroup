@@ -59,6 +59,7 @@ li {
 
 #homepage {
     header {
+        position:fixed;
         background-color: transparent;
     }
     .jumbotron {
@@ -68,7 +69,7 @@ li {
         height: 100vh;
         .lead {
             position: absolute;
-            top: 70vh;
+            top: 60vh;
             left: 50%;
 
             border-radius: 50%;
@@ -118,6 +119,20 @@ li {
 }
 
 
-footer {
+footer{
     background-color: #000;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    margin-top:50px;
+
+    .footer-nav {
+        padding: 20px;
+    }
+}
+
+#wrapper {
+    min-width: 100%;
+    position: relative;
 }
