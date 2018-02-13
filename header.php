@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
+    <script src="https://use.fontawesome.com/df09a2f94d.js"></script>
 
         <?php
         wp_register_style( $handle, $src, $deps, $ver, $media );
@@ -15,25 +15,23 @@
 
     <?php wp_head(); ?>
 </head>
-<body>
+<body  <?php body_class(); ?>>
+   
     <header> 
 
     <div class="logo">
+        <a href="<?php echo home_url(); ?>">
     Logo Section
+</a>
     </div>
 
     <nav>
-    <ul>
-        <li class="first">
-        <a href="#">About</a>
-        </li>
-        <li>
-        <a href="#">Contact</a>
-        </li>
-        <li class="last">
-        <a href="#">Github</a>
-        </li>
-    </ul>
+        <?php 
+        $args= array (
+            'theme_location' => 'primary'
+        );
+        ?>
+<?php wp_nav_menu( $args ); ?>
     </nav>
 
     </header>
