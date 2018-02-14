@@ -1,14 +1,16 @@
 @import '_reset';
 @import "_config.scss";
 
-
 header { 
-    position:relative;
+    position:fixed;
     display: block;
+    background-color: rgba(0, 0, 0, 0);
     width:100%;
-    background: black;
     color:white;
     height:90px;
+    transition: background-color 0.5s linear;
+    
+
 
     .logo {
         position: absolute;
@@ -58,10 +60,7 @@ li {
 }
 
 #homepage {
-    header {
-        position:fixed;
-        background-color: transparent;
-    }
+
     .jumbotron {
         display: flex;
         flex-flow: column;
@@ -69,7 +68,7 @@ li {
         height: 100vh;
         .lead {
             position: absolute;
-            top: 60vh;
+            top: 70vh;
             left: 50%;
 
             border-radius: 50%;
@@ -105,16 +104,22 @@ li {
         flex-flow: column;
         width: 100%;
         height: 30vh;
+        vertical-align: center;
+
 
 
     }
         h1{
             text-align: center;
             text-transform: uppercase;
+            padding-top: 40px;
+            font-size: 72px;
+            color: #fff;
         }
 }
 
 .logo-container {
+    padding-top: 40px;
     text-align: center;
 }
 
@@ -122,17 +127,20 @@ li {
 footer{
     background-color: #000;
     position: relative;
-    bottom: 0;
-    width: 100%;
     height: 150px;
-    margin-top:50px;
+    clear: both;
+    margin-top: -150px;
+    padding-top: 20px;
 
     .footer-nav {
         padding: 20px;
     }
 }
-
+#main {
+    overflow: auto;
+    padding-bottom: 180px;
+}
 #wrapper {
-    min-width: 100%;
     position: relative;
+    min-height: 100%;
 }

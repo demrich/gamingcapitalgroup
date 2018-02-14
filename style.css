@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(https://fonts.googleapis.com/css?family=Questrial);
 /* line 6, sass/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -60,20 +61,21 @@ table {
 }
 
 /* Mixins */
-/* line 19, sass/_config.scss */
+/* line 20, sass/_config.scss */
 html, body {
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: 'Questrial', sans-serif;
   font-size: 16px;
+  height: 100%;
 }
 
-/* line 25, sass/_config.scss */
+/* line 27, sass/_config.scss */
 a {
   -webkit-transform: 0.4s ease-in-out;
   -moz-transform: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   cursor: pointer;
 }
-/* line 29, sass/_config.scss */
+/* line 31, sass/_config.scss */
 a:hover {
   color: white;
   text-decoration: none;
@@ -82,27 +84,28 @@ a:hover {
   transition: 0.4s ease-in-out;
 }
 
-/* line 36, sass/_config.scss */
+/* line 38, sass/_config.scss */
 p {
   font-size: 18px;
   line-height: 30px;
 }
 
-/* line 41, sass/_config.scss */
+/* line 43, sass/_config.scss */
 .container-fluid {
   padding: 24px;
 }
 
-/* line 5, sass/style.scss */
+/* line 4, sass/style.scss */
 header {
-  position: relative;
+  position: fixed;
   display: block;
+  background-color: transparent;
   width: 100%;
-  background: black;
   color: white;
   height: 90px;
+  transition: background-color 0.5s linear;
 }
-/* line 13, sass/style.scss */
+/* line 15, sass/style.scss */
 header .logo {
   position: absolute;
   top: 50%;
@@ -113,18 +116,18 @@ header .logo {
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 20, sass/style.scss */
+/* line 22, sass/style.scss */
 header .logo a {
   color: #fff;
 }
-/* line 25, sass/style.scss */
+/* line 27, sass/style.scss */
 header nav,
 header nav ul,
 header nav ul li {
   margin: 0;
   padding: 0;
 }
-/* line 32, sass/style.scss */
+/* line 34, sass/style.scss */
 header nav {
   position: absolute;
   top: 40%;
@@ -133,44 +136,39 @@ header nav {
   -moz-transform: -50%;
   transition: -50%;
 }
-/* line 37, sass/style.scss */
+/* line 39, sass/style.scss */
 header nav ul li {
   list-style-type: none;
   display: inline-block;
   margin-right: 20px;
 }
-/* line 42, sass/style.scss */
+/* line 44, sass/style.scss */
 header nav ul li.last {
   margin: 0;
 }
-/* line 47, sass/style.scss */
+/* line 49, sass/style.scss */
 header nav ul li a {
   font-size: 19px;
   line-height: normal;
   color: white;
 }
 
-/* line 56, sass/style.scss */
+/* line 58, sass/style.scss */
 li {
   padding-bottom: 20px;
 }
 
-/* line 61, sass/style.scss */
-#homepage header {
-  position: fixed;
-  background-color: transparent;
-}
-/* line 65, sass/style.scss */
+/* line 64, sass/style.scss */
 #homepage .jumbotron {
   display: flex;
   flex-flow: column;
   width: 100%;
   height: 100vh;
 }
-/* line 70, sass/style.scss */
+/* line 69, sass/style.scss */
 #homepage .jumbotron .lead {
   position: absolute;
-  top: 60vh;
+  top: 70vh;
   left: 50%;
   border-radius: 50%;
   width: 120px;
@@ -180,51 +178,62 @@ li {
   text-align: center;
   font-size: 50px;
 }
-/* line 83, sass/style.scss */
+/* line 82, sass/style.scss */
 #homepage .jumbotron .lead a {
   line-height: 120px;
   color: #fff;
 }
-/* line 88, sass/style.scss */
+/* line 87, sass/style.scss */
 #homepage .jumbotron .lead a i.fa.fa-angle-down {
   font-size: 80px;
   line-height: 120px;
 }
 
-/* line 103, sass/style.scss */
+/* line 102, sass/style.scss */
 #page .jumbotron {
   display: flex;
   flex-flow: column;
   width: 100%;
   height: 30vh;
+  vertical-align: center;
 }
-/* line 111, sass/style.scss */
+/* line 112, sass/style.scss */
 #page h1 {
   text-align: center;
   text-transform: uppercase;
+  padding-top: 40px;
+  font-size: 72px;
+  color: #fff;
 }
 
-/* line 117, sass/style.scss */
+/* line 121, sass/style.scss */
 .logo-container {
+  padding-top: 40px;
   text-align: center;
 }
 
-/* line 122, sass/style.scss */
+/* line 127, sass/style.scss */
 footer {
   background-color: #000;
   position: relative;
-  bottom: 0;
-  width: 100%;
   height: 150px;
-  margin-top: 50px;
+  clear: both;
+  margin-top: -150px;
+  padding-top: 20px;
 }
-/* line 130, sass/style.scss */
+/* line 135, sass/style.scss */
 footer .footer-nav {
   padding: 20px;
 }
 
-/* line 135, sass/style.scss */
+/* line 139, sass/style.scss */
+#main {
+  overflow: auto;
+  padding-bottom: 180px;
+}
+
+/* line 143, sass/style.scss */
 #wrapper {
-  min-width: 100%;
   position: relative;
+  min-height: 100%;
 }

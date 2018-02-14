@@ -1,8 +1,8 @@
 <?php get_header() ?>
 
-<div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="logo-container">
+<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+<div class="jumbotron jumbotron-fluid" style="background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url('<?php echo $url ?>') no-repeat; background-size:cover;" />        <div class="container">
+            <div id="start" class="logo-container">
                <h1>THE LOGO</h1> 
             </div>
             <p class="lead">

@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Questrial);
 
 /* Mixins */
 
@@ -17,8 +18,9 @@
 
 
 html, body {
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family: 'Questrial', sans-serif;
     font-size: 16px;
+    height: 100%;
 }  
 
 

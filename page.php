@@ -1,9 +1,10 @@
 <?php get_header() ?>
 <div id="page">
-<div class="jumbotron jumbotron-fluid">
+<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+<div class="jumbotron jumbotron-fluid" style="background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url('<?php echo $url ?>') no-repeat; background-size:cover;" />
         <div class="container">
             <div>
-               <h1><?php the_title() ?></h1>
+               <h1 id="start"><?php the_title() ?></h1>
             </div>
 
         </div>

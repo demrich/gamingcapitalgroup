@@ -1,3 +1,6 @@
+</div>
+</div>
+
 <?php wp_footer(); ?>
 <footer>
 <div class="container">
@@ -10,7 +13,6 @@
 <?php wp_nav_menu( $args ); ?>
 
 </nav>
-    </div>
 </footer>
 </div>
 </body>

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/df09a2f94d.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 
         <?php
         wp_register_style( $handle, $src, $deps, $ver, $media );
@@ -18,6 +19,7 @@
 <body  <?php body_class(); ?>>
 
 <div id="wrapper">
+<div id="main">
 <?php if (is_home()) { ?>
     <div id="homepage">
 <?php } ?>
