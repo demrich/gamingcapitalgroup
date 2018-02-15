@@ -33,11 +33,6 @@
     </div>
 
     <nav>
-        <?php 
-        $args= array (
-            'theme_location' => 'primary'
-        );
-        ?>
     <div class="dropdown">
       <i class="fa fa-search"></i> <span id="home-menu" class="badge badge-danger" type="button" onclick="homeMenu()">START!</span>
  
@@ -45,6 +40,21 @@
     
     </nav>
     <div id="myDropdown" class="dropdown-content">
+            <div class="logo">
+                    <a href="<?php echo home_url(); ?>">
+                Logo Section
+            </a>
+            </div>
+            <div class="close">
+                <span>X</span>
+            </div>
+    <div class="menu">
+            <?php 
+            $args= array (
+                'theme_location' => 'primary'
+            );
+            ?>
             <?php wp_nav_menu( $args ); ?>
+    </div>
         </div>
     </header>
