@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/df09a2f94d.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
         <?php
         wp_register_style( $handle, $src, $deps, $ver, $media );
@@ -23,8 +24,8 @@
 <?php if (is_home()) { ?>
     <div id="homepage">
 <?php } ?>
-    <header> 
 
+    <header> 
     <div class="logo">
         <a href="<?php echo home_url(); ?>">
     Logo Section
@@ -37,8 +38,13 @@
             'theme_location' => 'primary'
         );
         ?>
-<?php wp_nav_menu( $args ); ?>
-    </nav>
-
-    </header>
+    <div class="dropdown">
+      <i class="fa fa-search"></i> <span id="home-menu" class="badge badge-danger" type="button" onclick="homeMenu()">START!</span>
+ 
+    </div>
     
+    </nav>
+    <div id="myDropdown" class="dropdown-content">
+            <?php wp_nav_menu( $args ); ?>
+        </div>
+    </header>

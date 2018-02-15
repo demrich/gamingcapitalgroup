@@ -60,22 +60,23 @@ table {
   border-spacing: 0;
 }
 
+/* Variables */
 /* Mixins */
-/* line 20, sass/_config.scss */
+/* line 25, sass/_config.scss */
 html, body {
   font-family: 'Questrial', sans-serif;
   font-size: 16px;
   height: 100%;
 }
 
-/* line 27, sass/_config.scss */
+/* line 32, sass/_config.scss */
 a {
   -webkit-transform: 0.4s ease-in-out;
   -moz-transform: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   cursor: pointer;
 }
-/* line 31, sass/_config.scss */
+/* line 36, sass/_config.scss */
 a:hover {
   color: white;
   text-decoration: none;
@@ -84,18 +85,32 @@ a:hover {
   transition: 0.4s ease-in-out;
 }
 
-/* line 38, sass/_config.scss */
+/* line 43, sass/_config.scss */
 p {
   font-size: 18px;
   line-height: 30px;
 }
 
-/* line 43, sass/_config.scss */
+/* line 48, sass/_config.scss */
 .container-fluid {
   padding: 24px;
 }
 
 /* line 4, sass/style.scss */
+.show {
+  background-color: #0f6cae;
+  background-image: -webkit-linear-gradient(-50deg, #0e64a2 50%, #0f6cae 50%) !important;
+  transition: background-color 0.5s linear;
+  transition: background-image 0.5s linear;
+}
+
+/* line 13, sass/style.scss */
+.show-scroll {
+  background-color: #0f6cae;
+  background-image: -webkit-linear-gradient(-50deg, #0e64a2 50%, #0f6cae 50%) !important;
+}
+
+/* line 21, sass/style.scss */
 header {
   position: fixed;
   display: block;
@@ -103,31 +118,46 @@ header {
   width: 100%;
   color: white;
   height: 90px;
-  transition: background-color 0.5s linear;
+  transition: background-color .5s linear;
+  z-index: 100;
 }
-/* line 15, sass/style.scss */
+/* line 33, sass/style.scss */
 header .logo {
   position: absolute;
-  top: 50%;
-  left: 15px;
-  padding: 20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  /* Need a specific value to work */
+  padding: 130px 20px 20px 20px;
   font-size: 25px;
+  text-align: center;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 22, sass/style.scss */
+/* line 44, sass/style.scss */
 header .logo a {
   color: #fff;
 }
-/* line 27, sass/style.scss */
+@media (max-width: 600px) {
+  /* line 49, sass/style.scss */
+  header .logo {
+    top: auto;
+    left: 15px;
+    right: auto;
+    float: left;
+  }
+}
+/* line 55, sass/style.scss */
 header nav,
 header nav ul,
 header nav ul li {
   margin: 0;
   padding: 0;
 }
-/* line 34, sass/style.scss */
+/* line 62, sass/style.scss */
 header nav {
   position: absolute;
   top: 40%;
@@ -135,37 +165,67 @@ header nav {
   -webkit-transform: -50%;
   -moz-transform: -50%;
   transition: -50%;
+  /*Dropdown Menu */
 }
-/* line 39, sass/style.scss */
+/* line 67, sass/style.scss */
 header nav ul li {
   list-style-type: none;
   display: inline-block;
   margin-right: 20px;
 }
-/* line 44, sass/style.scss */
+/* line 72, sass/style.scss */
 header nav ul li.last {
   margin: 0;
 }
-/* line 49, sass/style.scss */
+/* line 77, sass/style.scss */
 header nav ul li a {
   font-size: 19px;
   line-height: normal;
   color: white;
 }
-
-/* line 58, sass/style.scss */
-li {
-  padding-bottom: 20px;
+/* line 84, sass/style.scss */
+header nav .badge {
+  font-size: 25px;
+  letter-spacing: 3px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+}
+/* line 97, sass/style.scss */
+header nav .dropdown i {
+  font-size: 30px;
 }
 
-/* line 64, sass/style.scss */
+/* line 105, sass/style.scss */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 90px;
+  text-align: center;
+  background-color: #0f6cae;
+  min-width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* line 117, sass/style.scss */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 127, sass/style.scss */
 #homepage .jumbotron {
   display: flex;
   flex-flow: column;
   width: 100%;
   height: 100vh;
 }
-/* line 69, sass/style.scss */
+/* line 132, sass/style.scss */
 #homepage .jumbotron .lead {
   position: absolute;
   top: 70vh;
@@ -173,46 +233,47 @@ li {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  background-color: rgba(0, 123, 255, 0.65);
+  background-color: #0f6cae;
+  opacity: .95;
   margin-left: -60px;
   text-align: center;
   font-size: 50px;
 }
-/* line 82, sass/style.scss */
+/* line 146, sass/style.scss */
 #homepage .jumbotron .lead a {
   line-height: 120px;
   color: #fff;
 }
-/* line 87, sass/style.scss */
+/* line 151, sass/style.scss */
 #homepage .jumbotron .lead a i.fa.fa-angle-down {
   font-size: 80px;
   line-height: 120px;
 }
 
-/* line 102, sass/style.scss */
+/* line 166, sass/style.scss */
 #page .jumbotron {
   display: flex;
   flex-flow: column;
   width: 100%;
-  height: 30vh;
+  height: 60vh;
   vertical-align: center;
 }
-/* line 112, sass/style.scss */
+/* line 176, sass/style.scss */
 #page h1 {
   text-align: center;
   text-transform: uppercase;
-  padding-top: 40px;
-  font-size: 72px;
+  padding-top: 10vh;
+  font-size: 4em;
   color: #fff;
 }
 
-/* line 121, sass/style.scss */
+/* line 185, sass/style.scss */
 .logo-container {
   padding-top: 40px;
   text-align: center;
 }
 
-/* line 127, sass/style.scss */
+/* line 191, sass/style.scss */
 footer {
   background-color: #000;
   position: relative;
@@ -221,18 +282,18 @@ footer {
   margin-top: -150px;
   padding-top: 20px;
 }
-/* line 135, sass/style.scss */
+/* line 199, sass/style.scss */
 footer .footer-nav {
   padding: 20px;
 }
 
-/* line 139, sass/style.scss */
+/* line 203, sass/style.scss */
 #main {
   overflow: auto;
   padding-bottom: 180px;
 }
 
-/* line 143, sass/style.scss */
+/* line 207, sass/style.scss */
 #wrapper {
   position: relative;
   min-height: 100%;
