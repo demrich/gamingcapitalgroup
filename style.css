@@ -37,24 +37,29 @@ body {
   line-height: 1;
 }
 
-/* line 34, sass/_reset.scss */
+/* line 36, sass/_reset.scss */
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: initial;
+}
+
+/* line 40, sass/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 37, sass/_reset.scss */
+/* line 43, sass/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 40, sass/_reset.scss */
+/* line 46, sass/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 45, sass/_reset.scss */
+/* line 51, sass/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;

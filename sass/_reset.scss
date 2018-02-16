@@ -30,7 +30,13 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+
 }
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: initial;
+}
+
 ol, ul {
     list-style: none;
 }
