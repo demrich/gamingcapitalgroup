@@ -11,10 +11,10 @@
         </div>
     </div>
 </div>
+<div id="the-content"></div>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-        <div  class="col-md-8 offset-md-2">
+        <div  class="col-md-12">
 
         
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -27,7 +27,27 @@
 
 
          </div>
-        </div>
+    </div>
+</div>
+</div>
+
+<div id="cards">
+    <div class="jumbotron">
+            <div class="card one">
+                <span class="card-text">our<br>company</span>
+            </div> 
+
+            <div class="card two">
+                <span class="card-text">Financial<br>Solutions</span>
+            </div> 
+
+            <div class="card three">
+                <span class="card-text">Casino<br>Services</span>
+            </div> 
+
+            <div class="card four">
+                <span class="card-text">Clients</span>
+            </div> 
     </div>
 </div>
 

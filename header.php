@@ -46,7 +46,7 @@
             </a>
             </div>
             <div class="close">
-                <span>X</span>
+                <i class="fa fa-close"></i>
             </div>
     <div class="menu">
             <?php 

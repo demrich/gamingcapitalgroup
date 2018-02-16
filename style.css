@@ -62,21 +62,21 @@ table {
 
 /* Variables */
 /* Mixins */
-/* line 25, sass/_config.scss */
+/* line 31, sass/_config.scss */
 html, body {
   font-family: 'Questrial', sans-serif;
   font-size: 16px;
   height: 100%;
 }
 
-/* line 32, sass/_config.scss */
+/* line 38, sass/_config.scss */
 a {
   -webkit-transform: 0.4s ease-in-out;
   -moz-transform: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   cursor: pointer;
 }
-/* line 36, sass/_config.scss */
+/* line 42, sass/_config.scss */
 a:hover {
   color: white;
   text-decoration: none;
@@ -85,13 +85,13 @@ a:hover {
   transition: 0.4s ease-in-out;
 }
 
-/* line 43, sass/_config.scss */
+/* line 49, sass/_config.scss */
 p {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 28px;
+  line-height: 50px;
 }
 
-/* line 48, sass/_config.scss */
+/* line 54, sass/_config.scss */
 .container-fluid {
   padding: 24px;
 }
@@ -297,21 +297,72 @@ footer {
   position: relative;
   height: 150px;
   clear: both;
-  margin-top: -150px;
   padding-top: 20px;
 }
-/* line 221, sass/style.scss */
+/* line 220, sass/style.scss */
 footer .footer-nav {
   padding: 20px;
 }
 
-/* line 225, sass/style.scss */
+/* line 224, sass/style.scss */
 #main {
   overflow: auto;
   padding-bottom: 180px;
 }
 
-/* line 229, sass/style.scss */
+/* line 230, sass/style.scss */
+#the-content {
+  padding-top: 40px;
+}
+
+/* line 235, sass/style.scss */
+#cards .jumbotron {
+  text-align: center;
+}
+/* line 238, sass/style.scss */
+#cards .jumbotron .card {
+  position: relative;
+  text-transform: uppercase;
+  min-height: 450px;
+  min-width: 350px;
+  display: inline-block;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+}
+/* line 250, sass/style.scss */
+#cards .jumbotron .card .card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+/* line 262, sass/style.scss */
+#cards .jumbotron .card.one {
+  background: -webkit-linear-gradient(-50deg, #0e64a2 50%, #51555b 50%);
+}
+/* line 265, sass/style.scss */
+#cards .jumbotron .card.two {
+  background: -webkit-linear-gradient(-50deg, #f24b4c 50%, #51555b 50%);
+}
+/* line 268, sass/style.scss */
+#cards .jumbotron .card.three {
+  background: -webkit-linear-gradient(-50deg, #0e64a2 50%, #51555b 50%);
+}
+/* line 271, sass/style.scss */
+#cards .jumbotron .card.four {
+  background: -webkit-linear-gradient(-50deg, #f24b4c 50%, #51555b 50%);
+}
+
+/* line 279, sass/style.scss */
 #wrapper {
   position: relative;
   min-height: 100%;

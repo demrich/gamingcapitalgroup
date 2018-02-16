@@ -2,6 +2,12 @@
 $break-small: 600px;
 $header-background: -webkit-linear-gradient(-50deg, #0e64a2 50%, #0f6cae 50%) !important;
 $blue: #0f6cae;
+$red: #f24b4c;
+
+$cardOne:-webkit-linear-gradient(-50deg, #0e64a2 50%, #51555b 50%);
+$cardTwo:-webkit-linear-gradient(-50deg, #f24b4c 50%, #51555b 50%);
+$cardThree:-webkit-linear-gradient(-50deg, #0e64a2 50%, #51555b 50%);
+$cardFour:-webkit-linear-gradient(-50deg, #f24b4c 50%, #51555b 50%);
 
 @import url(https://fonts.googleapis.com/css?family=Questrial);
 
@@ -41,8 +47,8 @@ a {
 }
 
 p{
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 50px;
 }
 
 .container-fluid {
